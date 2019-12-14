@@ -102,15 +102,42 @@
                     </div>
 
                     <div class="row mv-down">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="cardpad">
                                 <h4 class="cardpap-head">Food Schedule
-                                    <a href="#" class="btn btn-sm btn-primary float-right">Add Schedule</a>
+                                    <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-sm btn-primary pull-right">Add Schedule</button>
                                 </h4>
+                                <hr>
+
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <strong>Breakfast</strong> - Cereals
+
+                                        <span class="badge badge-secondary badge-pill ">
+                                            <span class="glyphicon glyphicon-time icon-space "></span>08:00</span>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <strong>Lunch</strong> - Cereals
+
+                                        <span class="badge badge-secondary badge-pill ">
+                                                <span class="glyphicon glyphicon-time icon-space "></span>08:00</span>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <strong>Dinner</strong> - Cereals
+
+                                        <span class="badge badge-secondary badge-pill ">
+                                                    <span class="glyphicon glyphicon-time icon-space "></span>08:00</span>
+                                    </li>
+
+                                </ul>
+
+
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="cardpad">
+                        <div class="col-md-6 ">
+                            <div class="cardpad ">
                                 <h2>Food Calories<br> Count</h2>
                             </div>
                         </div>
@@ -122,9 +149,28 @@
 
     </div>
 
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="./js/custom.js"></script>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Add Food Schedule</h4>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Add Schedule</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js "></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js "></script>
+    <script src="./js/custom.js "></script>
 </body>
 
 </html>
